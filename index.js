@@ -1,12 +1,13 @@
 import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
-import App from './components/App';
-
+import Routes from './components/ReactRoutes';
 const rootElement = document.getElementById('root');
 render(
   <div>
-    <App />
+    <header>
+      <Routes />
+    </header>
   </div>,
   rootElement
 );
