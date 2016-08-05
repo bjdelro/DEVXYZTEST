@@ -1,10 +1,10 @@
 const React = require('react');
-import Home from './Home';
-export default class App extends React.Component {
+
+export default class Apply extends React.Component {
   render() {
     return (
       <div>
-        <Home />
+        Apply
       </div>
     );
   }

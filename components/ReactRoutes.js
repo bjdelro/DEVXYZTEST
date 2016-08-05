@@ -1,21 +1,22 @@
 const React = require('react');
 import { Router, Route, browserHistory } from 'react-router';
 import App from './App';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Projects from './Projects';
-import Navbar from './Navbar';
+import Rates from './Navbar/Rates';
+import About from './Navbar/About';
+import Requirements from './Navbar/Requirements';
+import Faq from './Navbar/Faq';
+import Apply from './Navbar/Apply';
 
 const Routes = React.createClass({
   render() {
     return (
       <Router history={browserHistory}>
         <Route path="/" component={App} >
-          <Route path="home" component={Home} />
           <Route path="about" component={About} />
-          <Route path="projects" component={Projects} />
-          <Route path="contact" component={Contact} />
+          <Route path="rates" component={Rates} />
+          <Route path="requirements" component={Requirements} />
+          <Route path="faq" component={Faq} />
+          <Route path="apply" component={Apply} />
         </Route>
 
       </Router>
