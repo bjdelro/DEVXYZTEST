@@ -2,6 +2,8 @@ import React from 'react';
 import { expect } from 'chai';
 import { mount } from 'enzyme';
 import Home from './../components/Home.js';
+// didnt get time to implement react-transform-hmr
+// needed this in my webpack in order to run my tests
 describe('Home Component', () => {
   const wrapper = mount(<Home />);
   it('contains Header component', () => {
